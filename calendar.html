@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="./src/css/base.css">
+    <style>
+        ul li {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        ul li a {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header img {
+            height: 70px;
+        }
+
+        table {
+            text-align: center;
+            border: 1px solid gray;
+            margin: auto;
+        }
+
+        thead {
+            background-color: rgb(66, 66, 66);
+            color: #fff;
+        }
+
+        th {
+            padding: 5px 10px;
+            font-size: 18px;
+        }
+
+        tbody tr td {
+            padding: 5px;
+        }
+
+        tbody tr:nth-child(even) td {
+            background-color: rgb(209, 207, 207);
+        }
+
+        tbody tr:hover td {
+            background-color: rgb(233, 217, 145);
+            cursor: pointer;
+        }
+
+        .footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./calendar.html">Agenda</a></li>
+                <li><a href="./about.html">Sobre</a></li>
+                <li><a href="./contact.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <h2>Agenda</h2>
+                <img src="./src/img/calendar.svg" alt="agenda">
+            </div>
+
+            <div class="content">
+                <h2>Horário de Atendimento</h2>
+                <p>
+                    A clínica <strong>Saraiva</strong> conta com diversos serviços de atendimento ao público, com qualidade e preço justo. Segue abaixo uma tabela com os serviços, horários de atendimento e valores.
+                </p>
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Segunda - Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                            <th>Valores</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clínico Geral</td>
+                            <td>07h-17h</td>
+                            <td>08h-13h</td>
+                            <td>-</td>
+                            <td>R$ 28,00</td>
+                        </tr>
+                        <tr>
+                            <td>Dentista</td>
+                            <td>07h-17h</td>
+                            <td>08h-13h</td>
+                            <td>-</td>
+                            <td>R$ 42,00</td>
+                        </tr>
+                        <tr>
+                            <td>Ginecologista</td>
+                            <td>07h-17h</td>
+                            <td>08h-13h</td>
+                            <td>-</td>
+                            <td>R$ 28,00</td>
+                        </tr>
+                        <tr>
+                            <td>Oftalmologista</td>
+                            <td>08h-14h</td>
+                            <td>08h-12h</td>
+                            <td>-</td>
+                            <td>R$ 28,00</td>
+                        </tr>
+                        <tr>
+                            <td>Pediatra</td>
+                            <td>07h-19h</td>
+                            <td>07h-17h</td>
+                            <td>08h-13h</td>
+                            <td>R$ 28,00</td>
+                        </tr>
+                        <tr>
+                            <td>Psicologa</td>
+                            <td>08h-14h</td>
+                            <td>08h-12h</td>
+                            <td>-</td>
+                            <td>R$ 28,00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="footer">
+                <p>
+                    Todos os direitos reservados
+                </p>
+                <p>
+                    <i>Projeto acadêmico</i>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
